@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*图片预览*/
+.back {
+    display: none;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.1);
+    z-index: 1000;
+    filter: alpha(opacity = 70);
+    text-align: center;
+}
+.center {
+    width: 80%;
+    margin: 5% auto;
+    z-index: 1001;
+    /*height: 80%;*/
+    margin: 5% auto;
+}
+
+/* 鼠标选择内容的颜色 */
+::selection{
+    /*color:#ff0000;*/
+    /*background-color: #67e6dc;*/
+    background-color: rgb(200,199,100);
+}
+
+::-moz-selection{
+    /*color:#ff0000;*/
+    background-color: rgb(0,196,182);
+}
+
+@font-face {
+    font-family: XuanYaChangGuiTi;        /*自定义字体名称*/
+    src:url("XuanYaChangGuiTi.ttf");     /*字体包路径*/
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    /*font-family: XuanYaChangGuiTi;*/
+    background-color: #F0F2F5;
+}
+
+/* 导航栏 */
+
+/* logo加Name */
+.root > .nav {
+    height: 10%;
+    background-color: rgb(255,255,255);
+    box-shadow: 0 0 3px 0 rgba(0,0,0,0.5);
+}
+
+.root > .nav > .ant-logo {
+    padding: 10px 0 10px 20px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.root > .nav > .ant-logo > a > img {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    vertical-align: middle;
+}
+
+.root > .nav > .ant-logo > a > h1 {
+    display: inline-block;
+    color: rgba(0,0,0,.85);
+    font-size: 18px;
+    padding-left: 7px;
+    vertical-align: middle;
+}
+
+/* Tabs栏 */
+.root > .nav > .ant-header-me {
+    display: inline-block;
+    padding-left: 5%;
+    vertical-align: middle;
+}
+
+.root > .nav > .ant-header-me > span {
+    padding-left: 20px;
+}
+
+.root > .nav > .ant-header-me > span > a {
+    font-size: 14px;
+    color: rgba(0,0,0,.85);
+    padding-bottom: 17px;
+}
+
+.root > .nav > .ant-header-me > .After-click > a {
+    color: #1890FF;
+    border-bottom: 3px solid #1890FF;
+}
+
+.root > .nav > .ant-header-me > span > a:hover {
+    color: #1890FF;
+    border-bottom: 3px solid #1890FF;
+}
+
+/* 搜索框 */
+.root > .nav > .search {
+    display: inline-block;
+    padding-left: 50vh;
+}
+
+.root > .nav > .search > .search-form > .form-box > .textInputBaidu {
+    width: 200px;
+    height: 15px;
+    padding: 5px 0 5px 5px;
+    vertical-align: middle;
+    border: 1px solid #C1BFBF;
+}
+
+.root > .nav > .search > .search-form > .form-box > .textInputBaidu:hover {
+    border: 1px solid #1890FF;
+    box-shadow: 0 0 0 1px #1890FF;
+}
+
+.root > .nav > .search > .search-form > .form-box > .btnBaidu {
+    width: 30px;
+    height: 27px;
+    vertical-align: middle;
+    margin-left: -5px;
+    background-color: #1890FF;
+    border: 1px solid #1890FF;
+    /*padding: 5px 0 5px 5px;*/
+}
+
+.root > .nav > .search > .search-form > .form-box > .btnBaidu:hover {
+    background-color: #40A9FF;
+}
+
+/* 主要内容部分 */
+.root > .box-content {
+    /* 暂时没有内容 */
+    /*width: 90%;*/
+    margin: 0 auto;
+}
+
+.root > .box-content > .box-content-share {
+    width: 90%;
+    /* 暂且无Bug */
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: #FFFFFF;
+}
+
+/* 软件推荐栏 */
+.root > .box-content > .box-content-share > .span-box {
+    display: inline-block;
+    padding: 5px 0 8px 30px;
+}
+
+.root > .box-content > .box-content-share > .span-box > a:hover {
+    color: #1890FF;
+}
+
+.root > .box-content > .box-content-share > .span-box > a > .box-image > .Image-center {
+    text-align: center;
+}
+
+.root > .box-content > .box-content-share > .span-box > a > .box-image > .Image-center > img {
+    width: 55px;
+    height: 55px;
+}
+
+.root > .box-content > .box-content-share > .span-box > a > .box-image > span {
+    font-size: 15px;
+    padding-top: 7px;
+    display: block;
+}
+
+.root > .box-content-1 {
+    width: 90%;
+    /* 暂且无Bug */
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+.root > .box-content-1 > .card {
+    display: inline-block;
+    width: 240px;
+    height: 370px;
+    border-radius: 3px 3px 3px 3px;
+    border: 1px solid #D9D9D9;
+    background-color: #FFFFFF;
+    position: relative;
+}
+
+.root > .box-content-1 > .card:hover {
+    box-shadow: 1px 1px 15px rgba(0,0,0,0.5);
+}
+
+.root > .box-content-1 > .dome {
+    margin-left: 76px;
+}
+
+.root > .box-content-1 > .card > .card-box > span > img {
+    width: 240px;
+    height: 240px;
+    border-radius: 3px 3px 0 0;
+}
+
+.root > .box-content-1 > .card > .card-box > p {
+    padding: 15px 0 0 20px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.root > .box-content-1 > .card > .card-box > p > .introduce {
+    display: block;
+    padding-top: 7px;
+    font-size: 15px;
+}
+
+/* 可下载 */
+.root > .box-content-1 > .card > .card-box > p > .click-button {
+    padding: 10px 70px 10px 66px;
+    color: #FFFFFF;
+    background-color: #1890FF;
+    border-radius: 3px 3px 3px 3px;
+    position: absolute;
+    bottom: 10px;
+}
+
+.root > .box-content-1 > .card > .card-box > p > .click-button:hover {
+    background-color: #40A9FF;
+}
+
+/* 不可下载 */
+.root > .box-content-1 > .card > .card-box > p > .forbid {
+    padding: 10px 70px 10px 66px;
+    color: #D9D9D9;
+    background-color: #F5F5F5;
+    position: absolute;
+    bottom: 10px;
+    border-radius: 3px 3px 3px 3px;
+    pointer-events: none;
+    border: 1px solid #D9D9D9;
+}
+
+
+.root > .box-content-2 {
+    width: 90%;
+    /* 暂且无Bug */
+    margin: 0 auto;
+    margin-top: 18px;
+    background-color: #FFFFFF;
+}
